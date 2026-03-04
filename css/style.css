@@ -1,4 +1,4 @@
-/* 1. VARIABILE ȘI RESETARE */
+
 :root {
     --primary-color: #4a90e2;       
     --primary-hover: #357abd;
@@ -14,15 +14,14 @@
     padding: 0;
 }
 
-/* 2. STILURI GENERALE PAGINĂ */
+
 body {
     font-family: 'Verdana', 'Geneva', sans-serif;
-    background-color: var(--secondary-color); /* Fundal gri deschis pentru toată pagina */
+    background-color: var(--secondary-color); 
     color: var(--text-color);
     line-height: 1.6;
 }
 
-/* Container principal pentru a centra pagina */
 body > header, 
 body > nav, 
 body > main, 
@@ -32,11 +31,9 @@ body > footer {
     margin: 0 auto;
     background: var(--background-color);
     padding: 20px;
-    /* Adăugăm umbră pentru efect de "coală de hârtie" */
     box-shadow: 0 0 10px rgba(0,0,0,0.05); 
 }
 
-/* 3. HEADER ȘI TITLURI */
 header {
     text-align: center;
     padding-top: 40px;
@@ -48,10 +45,10 @@ h1, h2, h3 {
     margin-bottom: 15px;
 }
 
-/* 4. NAVIGARE (BUTOANE) */
+
 nav {
     text-align: center;
-    background-color: #fff; /* Suprascriere fundal */
+    background-color: #fff; 
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -82,16 +79,14 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-/* 5. SECȚIUNI (Main & Aside) */
 section {
     margin-bottom: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid #eee;
 }
 
-/* Imaginea de profil */
 #about {
-    text-align: center; /* Centrează imaginea și textul */
+    text-align: center; 
 }
 
 #about img {
@@ -104,33 +99,30 @@ section {
     margin-bottom: 20px;
 }
 
-/* Aside - Zona de citate */
 aside {
-    background-color: #fff3cd; /* Galben pal pentru evidențiere */
+    background-color: #fff3cd; 
     border-left: 5px solid #ffc107;
     margin-bottom: 20px;
     font-style: italic;
 }
 
-/* 6. FORMULAR DE CONTACT (Stilizarea ta integrată) */
 footer {
-    background-color: var(--footer-bg) !important; /* !important forțează culoarea */
+    background-color: var(--footer-bg) !important; 
     color: white;
     margin-top: 40px;
     padding: 40px 20px;
     text-align: center;
 }
 
-/* Cardul alb al formularului */
 form {
     background-color: #ffffff;
-    color: var(--text-color); /* Text negru în formular */
+    color: var(--text-color); 
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 400px;
-    margin: 20px auto; /* Centrare orizontală în footer */
+    margin: 20px auto; 
     text-align: left;
 }
 
@@ -179,4 +171,16 @@ button {
 
 button:hover {
     background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+
+body.dark-mode {
+    --background-color: #1a1a2e; 
+    --text-color: #e0e0e0;       
+}
+
+body.dark-mode {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
 }
