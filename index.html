@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portofoliu Personal</title>
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Dumitru Daniel Andrei</h1>
+            <p>Student la UNITBV.</p>
+        </header>
+    <nav id="meniu">
+        <ul class="button">
+            <li><a href="#home">Acasa</a></li>
+            <li><a href="#about">Despre</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#education">Educatie</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>Despre mine</h2>
+            <img src="images/profil.jpg" 
+                 alt="Portret cu Popescu Andrei zâmbind" 
+                 loading="lazy"
+                 width="150">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos harum, temporibus aperiam doloremque ab animi, illum deserunt iure, ex vel eaque veniam! Maiores excepturi nostrum possimus tenetur, vel porro quidem.</p>
+        </section>
+        <section id="education">
+            <ol>
+                <li>Student la UNITBV</li>
+                <li>Liceu mate-info intensiv info</li>
+                <li>Scoala gimnaziala</li>
+            </ol>
+        </section>
+    </main>
+    <aside id="hobby">
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <blockquote>
+            "Singurul mod de a realiza lucruri minunate e să iubești ceea ce faci." 
+            - Steve Jobs
+        </blockquote>
+        <p><strong>Hobby-uri:</strong> Șah, Fotografie, Drumeții montane.</p>
+    </aside>
+    <script src="js/contact_form.js"></script>
+
+    <form id="contactForm">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <button type="button" onclick="submitForm()">Trimite Formularul</button>
+    </form>
+    <footer>
+        <p>&copy; 2026 Dumitru Daniel Andrei. Toate drepturile rezervate.</p>
+        <p>Contact: <a href="mailto:daniel-andrei.dumitru@student.unitbv.ro">daniel-andrei.dumitru@student.unitbv.ro</a></p>
+    </footer>
+
+    </body>
+    <script>
+        alert("Hello World!");
+    </script>
+</html>

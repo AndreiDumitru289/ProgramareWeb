@@ -1,0 +1,182 @@
+/* 1. VARIABILE ȘI RESETARE */
+:root {
+    --primary-color: #4a90e2;       
+    --primary-hover: #357abd;
+    --secondary-color: #f5f6fa;     
+    --background-color: #ffffff;   
+    --text-color: #2f3542;         
+    --footer-bg: #2c3e50;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. STILURI GENERALE PAGINĂ */
+body {
+    font-family: 'Verdana', 'Geneva', sans-serif;
+    background-color: var(--secondary-color); /* Fundal gri deschis pentru toată pagina */
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Container principal pentru a centra pagina */
+body > header, 
+body > nav, 
+body > main, 
+body > aside, 
+body > footer {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--background-color);
+    padding: 20px;
+    /* Adăugăm umbră pentru efect de "coală de hârtie" */
+    box-shadow: 0 0 10px rgba(0,0,0,0.05); 
+}
+
+/* 3. HEADER ȘI TITLURI */
+header {
+    text-align: center;
+    padding-top: 40px;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* 4. NAVIGARE (BUTOANE) */
+nav {
+    text-align: center;
+    background-color: #fff; /* Suprascriere fundal */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 5px;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+/* 5. SECȚIUNI (Main & Aside) */
+section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Imaginea de profil */
+#about {
+    text-align: center; /* Centrează imaginea și textul */
+}
+
+#about img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Aside - Zona de citate */
+aside {
+    background-color: #fff3cd; /* Galben pal pentru evidențiere */
+    border-left: 5px solid #ffc107;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* 6. FORMULAR DE CONTACT (Stilizarea ta integrată) */
+footer {
+    background-color: var(--footer-bg) !important; /* !important forțează culoarea */
+    color: white;
+    margin-top: 40px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Cardul alb al formularului */
+form {
+    background-color: #ffffff;
+    color: var(--text-color); /* Text negru în formular */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto; /* Centrare orizontală în footer */
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+}
