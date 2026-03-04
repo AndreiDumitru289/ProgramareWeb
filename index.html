@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portofoliu Personal</title>
+        <title>Portofoliu Personal-Andrei</title>
 
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -45,7 +45,7 @@
         </blockquote>
         <p><strong>Hobby-uri:</strong> Șah, Fotografie, Drumeții montane.</p>
     </aside>
-    <script src="js/contact_form.js"></script>
+    
 
     <form id="contactForm">
         <label for="fname">First name:</label><br>
@@ -54,16 +54,27 @@
         <label for="lname">Last name:</label><br>
         <input type="text" id="lname" name="lname" required><br>
 
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" required><br>
+
         <label for="message">Message:</label><br>
         <textarea id="message" name="message" rows="4" required></textarea><br><br>
 
-        <button type="button" onclick="submitForm()">Trimite Formularul</button>
+        <button type="submit">Trimite Formularul</button>
+        
+        <p id="feedback"></p>
     </form>
+
+    <script src="js/contact_form.js"></script>
     <footer>
         <p>&copy; 2026 Dumitru Daniel Andrei. Toate drepturile rezervate.</p>
         <p>Contact: <a href="mailto:daniel-andrei.dumitru@student.unitbv.ro">daniel-andrei.dumitru@student.unitbv.ro</a></p>
     </footer>
-
+    
+    <header>
+        <p>Doctorand la UNITBV</p> 
+    </header>
+    <script src="js/ex_1.js"></script>
     </body>
     <script>
         alert("Hello World!");
