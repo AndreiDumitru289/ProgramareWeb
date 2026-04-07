@@ -2,6 +2,7 @@ import Card from './Card';
 import QuickNote from './QuickNote'; 
 import TodoList from './TodoList'; 
 import ContactForm from './ContactForm';
+import Clock from './Clock';
 import { useState } from 'react';
 
 function App() {
@@ -43,6 +44,8 @@ function App() {
   <QuickNote />
   <TodoList />
   <ContactForm />
+  <br />
+  <Clock />
   <br />
 </div>
 
