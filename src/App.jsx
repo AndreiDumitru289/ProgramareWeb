@@ -1,5 +1,6 @@
 import Card from './Card';
-import QuickNote from './QuickNote';  
+import QuickNote from './QuickNote'; 
+import TodoList from './TodoList'; 
 import { useState } from 'react';
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
   <br />
   <button onClick={() => setCount(0)}>Reset</button>
   <QuickNote />
+  <TodoList />
 </div>
 
 );
