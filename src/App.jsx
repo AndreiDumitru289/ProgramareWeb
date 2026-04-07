@@ -4,6 +4,7 @@ import TodoList from './TodoList';
 import ContactForm from './ContactForm';
 import Clock from './Clock';
 import ProjectList from './ProjectList';
+import UsersList from './UsersList';
 import { useState } from 'react';
 
 function App() {
@@ -49,6 +50,8 @@ function App() {
   <Clock />
   <br />
   <ProjectList />
+  <br />
+  <UsersList />
 </div>
 
 );
