@@ -1,8 +1,8 @@
-function Card() {
+function Card(props) {
   return (
     <div>
-      <h3>Andrei</h3>
-      <p>Student</p>
+      <h3>{props.title}</h3>
+      <p>{props.description}</p>
     </div>
   );
 }
