@@ -3,6 +3,7 @@ import QuickNote from './QuickNote';
 import TodoList from './TodoList'; 
 import ContactForm from './ContactForm';
 import Clock from './Clock';
+import ProjectList from './ProjectList';
 import { useState } from 'react';
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
   <br />
   <Clock />
   <br />
+  <ProjectList />
 </div>
 
 );
