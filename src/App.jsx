@@ -1,59 +1,22 @@
-import Card from './Card';
-import QuickNote from './QuickNote'; 
-import TodoList from './TodoList'; 
-import ContactForm from './ContactForm';
-import Clock from './Clock';
-import ProjectList from './ProjectList';
-import UsersList from './UsersList';
-import { useState } from 'react';
-
+import { BrowserRouter, Routes, Route } from 'react-router';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import Navbar from "/src/Navbar";
+import NotFound from "./pages/NotFound";
 function App() {
-
-  const [count, setCount] = useState(0);
-
-  const projects = [
-    { title: "Proiect 1", description: "Pagina personala" },
-    { title: "Proiect 2", description: "Calculator buget" },
-    { title: "Proiect 3", description: "Dashboard React" },
-    { title: "Proiect 4", description: "Aplicatie de notite" },
-    { title: "Proiect 5", description: "Joc de trivia" }
-
-  ];
-
   return (
+    <BrowserRouter>
+      <Navbar />   {}
+      
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
 
-<div>
-      <h1>Dashboard</h1>
-      {projects.map(function(item, index) {
-        return (
-          <Card
-            key={index}
-            title={item.title}
-            description={item.description}
-
-            />
-        );
-
-
-})}
-  <br />
-  <p>Ai apasat butonul de {count} ori</p>
-  <button onClick={() => setCount(count + 1)}>Click</button>
-  <br />
-  <button onClick={() => setCount(count - 1)}>-1</button>
-  <br />
-  <button onClick={() => setCount(0)}>Reset</button>
-  <QuickNote />
-  <TodoList />
-  <ContactForm />
-  <br />
-  <Clock />
-  <br />
-  <ProjectList />
-  <br />
-  <UsersList />
-</div>
-
-);
+    </BrowserRouter>
+  );
 }
 export default App;
