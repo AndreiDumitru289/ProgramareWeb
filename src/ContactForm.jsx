@@ -9,38 +9,50 @@ function ContactForm() {
   function handleSubmit() {
     if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
       setFeedback('Completeaza toate campurile!');
-    } else {
-      setFeedback('Multumim, ' + name + '!');
+      return;
     }
+
+    setFeedback('Multumim, ' + name + '!');
   }
 
   return (
-    <div>
+    <div className="projects-section">
       <h3>Formular de contact</h3>
 
-      <input
-        type="text"
-        placeholder="Nume"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
+      <div className="edit-form">
+        <input
+          type="text"
+          placeholder="Nume"
+          value={name}
+          onChange={function (event) {
+            setName(event.target.value);
+          }}
+        />
 
-      <input
-        type="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={function (event) {
+            setEmail(event.target.value);
+          }}
+        />
 
-      <textarea
-        placeholder="Mesaj"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-      ></textarea>
+        <textarea
+          className="contact-textarea"
+          placeholder="Mesaj"
+          value={message}
+          onChange={function (event) {
+            setMessage(event.target.value);
+          }}
+        ></textarea>
 
-      <button onClick={handleSubmit}>Submit</button>
+        <button type="button" className="button button-primary" onClick={handleSubmit}>
+          Submit
+        </button>
+      </div>
 
-      <p>{feedback}</p>
+      <p className="message">{feedback}</p>
     </div>
   );
 }

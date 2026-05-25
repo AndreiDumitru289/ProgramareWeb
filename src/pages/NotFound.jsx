@@ -1,13 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router';
 
 function NotFound() {
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>404 — Pagina nu există</h1>
-      <p>Oops! Se pare că ai ajuns unde nu trebuie 😅</p>
-      
-      <Link to="/" style={{ color: "blue", textDecoration: "underline" }}>
-        Înapoi la Home
+    <div className="page-section not-found">
+      <h1>404 - Pagina nu exista</h1>
+      <Link to="/" className="back-link">
+        Inapoi la Home
       </Link>
     </div>
   );
